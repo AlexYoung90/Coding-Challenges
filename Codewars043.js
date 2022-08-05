@@ -22,8 +22,17 @@ Floats with decimal part non equal to zero are considered UNeven for this kata. 
 
 // we can easily do this with a simple function that takes in one param of n
 function testEven(n){
-    return n % 2 === 0 ? true : false //using a ternary to check if n is evenly divisible by 2 and returning true or false.
+    return n % 2 === 0 
 }
+// this could also be written as a variable
+
+// const testEven = n => n % 2 === 0 ? true : false
+// or like 
+// const testEven = n => !(n % 2)
+ 
+// The "!" exclamation point is part of JavaScript's logical operators.
+// It is called the "unary negation operator", or more simply "logical NOT".
+// It tries to convert whatever follows it into a boolean value ( true / false ).
 
 // tests //
 testEven(4)//return true because it is even
